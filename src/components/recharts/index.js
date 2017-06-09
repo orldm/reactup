@@ -1,5 +1,5 @@
 import React from 'react'
-import { LineChart, AreaChart, PieChart, Pie, Area, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
+import { LineChart, AreaChart, PieChart, BarChart, Bar, Pie, Area, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
 const data = [
       {name: 'Page A', uv: 4000, pv: 2400, amt: 2400},
@@ -64,7 +64,20 @@ const Recharts = () => (
             <Area type="monotone" dataKey="pv" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
         </AreaChart>
     </ResponsiveContainer>
-    <ResponsiveContainer width='100%' height={400} >
+        <ResponsiveContainer width='50%' height={400} >
+        <BarChart data={data}
+            layout='vertical'
+            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+            <XAxis type="number" />
+            <YAxis type="category" dataKey="name"/>
+            <CartesianGrid strokeDasharray="3 3" />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="pv" fill="#8884d8" />
+            <Bar dataKey="uv" fill="#82ca9d" />
+        </BarChart>
+    </ResponsiveContainer>
+    <ResponsiveContainer width='50%' height={400} >
         <PieChart>
             <Pie data={data01} dataKey="value" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" label />
             <Pie data={data02} dataKey="value" cx="50%" cy="50%" innerRadius={110} outerRadius={150} fill="#82ca9d" label />
