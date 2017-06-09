@@ -25,6 +25,11 @@ ul.link-container {
   padding: 0;
 }
 
+.align-center {
+  width: 50%;
+  margin: 0 auto;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
