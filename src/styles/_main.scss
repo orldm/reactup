@@ -204,7 +204,7 @@ a {
     }
     .trending-topic-info {
         position: relative;
-        flex: 0 auto;  
+        flex: 0 0 auto;  
         padding-left: 16px;
         .trending-topic-header {
             color: $light-grey;
@@ -299,7 +299,7 @@ a {
             text-transform: uppercase;
         }
         .event-details {
-            flex: 1 auto;
+            flex: 1 1 auto;
             height: 70px;
             padding: 16px 16px 0 16px;
             overflow: hidden;
@@ -337,7 +337,7 @@ a {
     }
 }
 .company-main-details {
-    flex: 1 auto;
+    flex: 1 1 auto;
     padding-left: 32px;
     .company-source {
         color: $light-grey;
@@ -449,7 +449,7 @@ a {
         border-radius: 16px;
     }
     .decision-maker-info {
-        flex: 1 auto;
+        flex: 1 1 auto;
         padding-left: 16px;
         .dm-name-link {
             @include link;
@@ -486,7 +486,7 @@ a {
     }
 }
 .input-container {
-    flex: 1 auto;
+    flex: 1 1 auto;
     padding: 16px 16px 0 0;
     .add-input-field {
         width: 100%;

@@ -4,13 +4,13 @@
      // Search
     .search-container {
         position: relative;
-        flex: 1 auto;        
+        flex: 1 1 auto;       
         width: auto;
         height: 50px;
         padding: 8px 16px;
         &.filters-container {
             display: inline-block;
-            flex: 0 auto;
+            flex: 0 0 auto;
             width: 250px;
             margin-right: 40px;
         }
