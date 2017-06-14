@@ -1,0 +1,85 @@
+@import 'variables';
+
+.btn-edit-dashboard {
+    float: right;
+    @include button;
+    @include blue-button;
+    padding: 8px 20px;
+    &:hover {
+        background: $header-blue;
+    }
+}
+.btn-following {
+    @include button;
+    color: $header-action-color;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 40px;
+    margin-right: 16px;
+    background: $body-color;   
+    &:hover {
+        background: $light-grey;
+        opacity: 0.7;
+    }
+    img {
+        margin-right: 8px;
+    }
+}
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+.btn-dropdown-more {
+    @include button;
+    @include blue-button;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    &:hover {
+        background: $header-blue;
+    }
+    img {
+        vertical-align: middle;
+    }
+}
+.btn-settings {
+    @include button;
+    display: inline-block;
+    float: right;
+    width: 18px;
+    height: 18px;
+    line-height: 1;
+    background: $body-color;
+    img { 
+        vertical-align: middle;
+    }
+}
+.btn-email {
+    @include button;
+    @include blue-button;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    img {
+        vertical-align: middle;
+    }
+}
+.btn-add {
+    @include button;
+    @include blue-button;
+    height: 32px;
+    padding: 8px 28px;
+    margin-top: 16px;
+}
+.btn-checked {
+    @include button;
+    @include blue-button;
+    display: inline-block;
+    float: right;
+    width: 16px;
+    height: 16px;
+}

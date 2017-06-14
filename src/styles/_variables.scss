@@ -1,0 +1,69 @@
+$body-color: #edf2f5;
+$dark-grey: #2c3e50;
+$header-blue: #2980b9;
+$header-search-blue: #469fc9;
+$header-action-color: #0073a3;
+$blue: #0081b8;
+$white: #fff;
+$white-opacity: #d0e5f0;
+$menu-active-color: #22323e;
+$dark-text: #212f3f;
+$notification-red: #e74c3c;
+$light-grey: #a7abae;
+$yellow: #fbdd59;
+$aple-green: #a4d255;
+
+// Mixins
+@mixin button {    
+    text-align: center;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+@mixin blue-button {
+    color: $white;
+    font-size: 12px;
+    background: $header-action-color;
+}
+@mixin link {
+    color: $header-action-color;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 1.5;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Notification
+.notification-lable {
+    position: absolute;
+    min-width: 24px;
+    height: 24px;
+    z-index: 101;
+    color: $white;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    padding: 0px 3px;        
+    background: $notification-red;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+// Scroll
+.decision-makers-list::-webkit-scrollbar {
+    width: 8px;
+} 
+.decision-makers-list::-webkit-scrollbar-track {
+    background: $body-color;
+} 
+.decision-makers-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: $light-grey;
+}
+
+// Checkbox

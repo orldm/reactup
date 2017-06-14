@@ -1,0 +1,123 @@
+@import 'variables';
+
+// Left part (menu)
+.left-container {
+    float: left;
+    z-index: 100;
+    width: 240px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: $dark-grey;   
+    box-shadow: 1px 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.left-menu {
+    width: 100%;
+    height: 100%;
+    background: $dark-grey;
+    .left-menu-header {
+        color: $white;
+        font-size: 20px;
+        text-align: center;
+        padding: 12px;
+        img {
+            margin-right: 10px;
+        }
+    }
+    .left-menu-list {
+      position: relative;
+      color: $white;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 16px 0px 30px;
+      .left-menu-list-title {
+          display: inline-block;
+          padding: 10px 16px;
+      }
+      .btn-add-item {
+          position: absolute;
+          top: 24px;
+          right: 16px;
+          width: 18px;
+          height: 18px;
+          color: $white;
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 0.8;
+          text-align: center;
+          background: $menu-active-color;
+          cursor: pointer;
+      }
+      ul {
+          list-style: none;
+      }
+      .menu-list-dashboard {
+          position: relative;
+          width: 240px;
+          height: 42px;
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 1;
+          padding: 14px 16px 14px 0px;
+          border-left: 4px solid transparent;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          cursor: pointer;
+          &:hover {
+              background: $menu-active-color;
+              border-left: 4px solid $header-blue;
+          }
+          span {
+              display: inline-block;
+          }              
+      }
+      .notification-lable {
+          top: 10px;
+          right: 16px;
+      }
+      .menu-list-icon,
+      .menu-list-logo {
+          width: 34px;
+          height: 100%;
+          margin-left: 16px;
+      }
+      .menu-list-logo {
+          width: 45px;
+      }
+      .icon-feeds {
+          background: url('./images/ic-feeds.svg') no-repeat left center;             
+      }
+      .icon-dashboard {
+          background: url('./images/ic-dashboard.svg') no-repeat left center;
+      }
+      .icon-marketing {
+          background: url('./images/ic-marketing.svg') no-repeat left center;
+      }
+      .icon-sales {
+          background: url('./images/ic-sales.svg') no-repeat left center;
+      }
+      .icon-notifications {
+          background: url('./images/ic-notifications.svg') no-repeat left center;
+      }
+      .icon-preferences {
+          background: url('./images/ic-settings.svg') no-repeat left center;
+      }
+      .logo-airbnb {
+          background: url('./images/logo/airbnb.png') no-repeat left center;
+          background-size: 28px auto;
+      }
+      .logo-dropbox {
+          background: url('./images/logo/dropbox.png') no-repeat left center;
+          background-size: 28px auto;
+      }
+      .logo-slack {
+          background: url('./images/logo/slack.png') no-repeat left center;
+          background-size: 28px auto;
+      }
+      .logo-spotify {
+          background: url('./images/logo/spotify.png') no-repeat left center;
+          background-size: 28px auto;
+      }
+    }
+}

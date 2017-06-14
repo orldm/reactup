@@ -1,0 +1,163 @@
+// Header
+.header-comtainer {
+    position: relative;
+     // Search
+    .search-container {
+        position: relative;
+        flex: 1 auto;        
+        width: auto;
+        height: 50px;
+        padding: 8px 16px;
+        &.filters-container {
+            display: inline-block;
+            flex: 0 auto;
+            width: 250px;
+            margin-right: 40px;
+        }
+    }
+    .search-field {
+        width: 100%;
+        height: 32px;
+        color: $white-opacity;
+        font-size: 14px;
+        padding: 8px 16px;
+        background: $header-search-blue;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        border-radius: 2px;
+
+        &::-webkit-input-placeholder {color:$white-opacity;}
+        &::-moz-placeholder          {color:$white-opacity;}/* Firefox 19+ */
+        &:-moz-placeholder           {color:$white-opacity;}/* Firefox 18- */
+        &:-ms-input-placeholder      {color:$white-opacity;}
+    }
+    .icon-search {
+        position: absolute;
+        top: 15px;
+        right: 28px;
+        cursor: pointer;
+    }
+    .btn-add-filters {
+        position: absolute;
+        top: 8px;
+        right: -16px;
+        width: 32px;
+        height: 32px;
+        color: $white;
+        font-size: 30px;
+        line-height: 0.95;
+        text-align: center;
+        background: $header-action-color;
+        border-radius: 2px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+.header {
+    display: flex;
+    width: 100%;
+    background: $header-blue;   
+    .filters-dropdown-container {
+        width: auto;
+        height: 50px;
+        padding: 8px 16px 8px 0px;        
+        cursor: pointer;        
+        .filters-dropdown {
+            width: 48px;
+            height: 32px;
+            background: $header-action-color;           
+            border-radius: 2px;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        .icon-filters {
+            display: inline-block;
+            float: left;
+            width: 28px;
+            height: 32px;
+            background: url('./images/ic-filter-list.svg') no-repeat center;
+        }
+        .icon-dropdown {
+            vertical-align: middle;
+            line-height: 32px;
+            margin-left: 5px;
+            img {
+                width: 8px;
+                height: auto;
+                vertical-align: middle;
+            }
+        }        
+    }
+    // Profile settings
+    .profile-settings-container {
+        width: auto;
+        height: 50px;
+        padding: 8px 16px;
+        background: $header-action-color;
+        .userpic {
+            float: left;
+        }
+        .user-name {
+            display: inline-block;
+            color: $white;
+            font-size: 14px;
+            line-height: 34px;
+            padding: 0px 16px;
+        }
+        .icon-dropdown {
+            img {
+                width: 15px;
+                height: auto;
+            }
+        }
+    }
+}
+// Header filters
+.search-filters-container {
+    display: flex;
+    width: 100%;
+    max-height: 0px;
+    background: $header-blue;
+    overflow: hidden;
+    -webkit-transition: all 0.7s ease-out 0.5s;
+    -moz-transition:  all 0.7s ease-out 0.5s;
+    -o-transition:  all 0.7s ease-out 0.5s;
+    transition:  all 0.7s ease-out 0.5s;
+    &.open {
+        max-height: 200px;
+        -webkit-transition: all 0.7s ease-out 0.5s;
+        -moz-transition:  all 0.7s ease-out 0.5s;
+        -o-transition:  all 0.7s ease-out 0.5s;
+        transition:  all 0.7s ease-out 0.5s;
+    }
+    .filters {
+        display: inline-block;
+        width: calc(100% - 290px);
+        padding: 12px 16px;
+        line-height: 1.7;
+    }
+    .filter-tag {
+        display: inline-block;
+        color: $white;
+        font-size: 12px;
+        line-height: 1;
+        padding: 5px 10px;
+        margin: 0px 5px;
+        background: $dark-grey;
+        border-radius: 16px;
+        span {
+            margin: 0px 5px;
+            img { 
+                vertical-align: middle;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

@@ -16,8 +16,8 @@
     "react-scripts": "1.0.7"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/styles -o src/styles",
-    "watch-css": "npm run build-css && node-sass-chokidar src/styles -o src/styles --watch --recursive",
+    "build-css": "node-sass-chokidar src/App.scss -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/App.scss -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "react-scripts build",
