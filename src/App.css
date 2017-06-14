@@ -181,30 +181,6 @@
   width: 16px;
   height: 16px; }
 
-.notification-lable {
-  position: absolute;
-  min-width: 24px;
-  height: 24px;
-  z-index: 101;
-  color: #fff;
-  font-size: 12px;
-  line-height: 24px;
-  text-align: center;
-  padding: 0px 3px;
-  background: #e74c3c;
-  border-radius: 15px;
-  cursor: pointer; }
-
-.decision-makers-list::-webkit-scrollbar {
-  width: 8px; }
-
-.decision-makers-list::-webkit-scrollbar-track {
-  background: #edf2f5; }
-
-.decision-makers-list::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: #a7abae; }
-
 .left-container {
   float: left;
   z-index: 100;

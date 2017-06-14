@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 import ReactVis from './components/react-vis'
 import Recharts from './components/recharts'
+import Main from './components'
 
 // import logo from './logo.svg'
 import './App.css'
@@ -21,7 +22,7 @@ class App extends Component {
         <Router>
           <div>
             <Route exact path="/" component={Home}/>
-            <Route path="/in-depth" component={InDepth}/>
+            <Route path="/in-depth" component={Main}/>
             <Route path="/recharts" component={Recharts}/>
             <Route path="/react-vis" component={ReactVis}/>
           </div>
@@ -38,12 +39,6 @@ const Home = () => (
       <li><Link to="/recharts">Recharts</Link></li>
       <li><Link to="/react-vis">React-Vis</Link></li>
     </ul>
-  </div>
-)
-
-const InDepth = () => (
-  <div>
-    <h1>In-Depth Dashboard</h1>
   </div>
 )
 
