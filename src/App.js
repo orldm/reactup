@@ -8,7 +8,7 @@ import ReactVis from './components/react-vis'
 import Recharts from './components/recharts'
 
 // import logo from './logo.svg'
-import './App.css'
+import './styles/App.css'
 
 class App extends Component {
   render() {
