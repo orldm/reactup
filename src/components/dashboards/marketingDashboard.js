@@ -1,47 +1,10 @@
 import React from 'react'
+import Header from '../header'
 
 const MarketingDashboard = () => (
   <div className="right-container">
       {/*<!-- Header -->*/}
-      <header>
-          <div className="header-comtainer">
-              <div className="header">
-                  {/*<!-- Search -->*/}
-                  <div className="search-container">
-                      <input type="text" name="search" className="search-field" placeholder="Type your query…" />
-                      <div className="icon-search"><img src={require('../../../images/ic-search.svg')} alt=""/></div>
-                  </div>
-                  {/*<!-- END of Search -->*/}
-                  <div className="filters-dropdown-container">
-                      <div className="filters-dropdown">
-                          <span className="icon-filters"></span>
-                          <span className="icon-dropdown">
-                              <img src={require('../../../images/ic-arrow-drop-down.svg')} alt=""/>
-                          </span>
-                      </div>
-                  </div>
-                  <div className="profile-settings-container">
-                      <img className="userpic" src={require('../../../images/userpic-header.png')} alt="userpic" />
-                      <div className="user-name">Rodney Wood</div>
-                      <span className="icon-dropdown">
-                              <img src={require('../../../images/ic-arrow-drop-down.svg')} alt=""/>
-                          </span>
-                  </div>
-              </div>
-              <div className="search-filters-container">
-                  {/*<!-- Filters search -->*/}
-                  <div className="search-container filters-container">
-                      <input type="text" name="search" className="search-field" placeholder="Filter by company or industry" />
-                      <div className="btn-add-filters">+</div>
-                  </div>
-                  {/*<!-- END of Filters search -->*/}
-                  <div className="filters">
-                      <div className="filter-tag"><span>Spotify</span><span><img src={require('../../../images/ic-close.svg')} alt=""/></span></div>
-                      <div className="filter-tag"><span>Music streaming</span><span><img src={require('../../../images/ic-close.svg')} alt=""/></span></div>
-                  </div>
-              </div>                    
-          </div>
-      </header>
+      <Header />
       {/*<!-- END of Header -->*/}
       {/*<!-- CONTENT of PAGE -->*/}
       <div className="page-heading">
@@ -58,32 +21,32 @@ const MarketingDashboard = () => (
                   </div>
                   <div className="widget-content">
                       <div className="company-item">
-                          <div className="company-logo"><img src={require('../../../images/logo/airbnb.png')} alt=""/></div>
+                          <div className="company-logo"><img src={require('../../images/logo/airbnb.png')} alt=""/></div>
                           <div className="company-name">Airbnb</div>
                           <div className="notification-lable">100</div>
                       </div>
                       <div className="company-item">
-                          <div className="company-logo"><img src={require('../../../images/logo/dropbox.png')} alt=""/></div>
+                          <div className="company-logo"><img src={require('../../images/logo/dropbox.png')} alt=""/></div>
                           <div className="company-name">Dropbox</div>
                       </div>
                       <div className="company-item">
-                          <div className="company-logo"><img src={require('../../../images/logo/pinterest.png')} alt=""/></div>
+                          <div className="company-logo"><img src={require('../../images/logo/pinterest.png')} alt=""/></div>
                           <div className="company-name">Pinterest</div>
                       </div>
                       <div className="company-item">
-                          <div className="company-logo"><img src={require('../../../images/logo/slack.png')} alt=""/></div>
+                          <div className="company-logo"><img src={require('../../images/logo/slack.png')} alt=""/></div>
                           <div className="company-name">Slack</div>
                       </div>
                       <div className="company-item">
-                          <div className="company-logo"><img src={require('../../../images/logo/spotify.png')} alt=""/></div>
+                          <div className="company-logo"><img src={require('../../images/logo/spotify.png')} alt=""/></div>
                           <div className="company-name">Spotify</div>
                       </div>
                       <div className="company-item">
-                          <div className="company-logo"><img src={require('../../../images/logo/whatsapp.png')} alt=""/></div>
+                          <div className="company-logo"><img src={require('../../images/logo/whatsapp.png')} alt=""/></div>
                           <div className="company-name">WhatsApp</div>
                       </div>
                       <div className="company-item">
-                          <div className="company-logo"><img src={require('../../../images/logo/spacex.png')} alt=""/></div>
+                          <div className="company-logo"><img src={require('../../images/logo/spacex.png')} alt=""/></div>
                           <div className="company-name">SpaceX</div>
                           <div className="notification-lable">50</div>
                       </div>
@@ -179,8 +142,8 @@ const MarketingDashboard = () => (
                           </div>
                           <div className="trending-topic-text">Spotify acquires 4th company in past 3 months - and looks set to ...</div>
                           <div className="trending-topic-pop">
-                              <span className="topic-likes"><img src={require('../../../images/ic-file-like.svg')} alt=""/>1,200</span>
-                              <span className="topic-download"><img src={require('../../../images/ic-file-download.svg')} alt=""/>129</span>
+                              <span className="topic-likes"><img src={require('../../images/ic-file-like.svg')} alt=""/>1,200</span>
+                              <span className="topic-download"><img src={require('../../images/ic-file-download.svg')} alt=""/>129</span>
                           </div>
                       </div>
                   </div>
@@ -195,8 +158,8 @@ const MarketingDashboard = () => (
                           </div>
                           <div className="trending-topic-text">Spotify acquires 4th company in past 3 months - and looks set to ...</div>
                           <div className="trending-topic-pop">
-                              <span className="topic-likes"><img src={require('../../../images/ic-file-like.svg')} alt=""/>1,200</span>
-                              <span className="topic-download"><img src={require('../../../images/ic-file-download.svg')} alt=""/>129</span>
+                              <span className="topic-likes"><img src={require('../../images/ic-file-like.svg')} alt=""/>1,200</span>
+                              <span className="topic-download"><img src={require('../../images/ic-file-download.svg')} alt=""/>129</span>
                           </div>
                       </div>
                   </div>
@@ -211,8 +174,8 @@ const MarketingDashboard = () => (
                           </div>
                           <div className="trending-topic-text">Spotify acquires 4th company in past 3 months - and looks set to ...</div>
                           <div className="trending-topic-pop">
-                              <span className="topic-likes"><img src={require('../../../images/ic-file-like.svg')} alt=""/>1,200</span>
-                              <span className="topic-download"><img src={require('../../../images/ic-file-download.svg')} alt=""/>129</span>
+                              <span className="topic-likes"><img src={require('../../images/ic-file-like.svg')} alt=""/>1,200</span>
+                              <span className="topic-download"><img src={require('../../images/ic-file-download.svg')} alt=""/>129</span>
                           </div>
                       </div>
                   </div>

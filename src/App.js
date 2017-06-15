@@ -4,9 +4,9 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import ReactVis from './components/react-vis'
+import ReactVis from './components/reactVis'
 import Recharts from './components/recharts'
-import Main from './components'
+import Main from './components/mainContainer'
 
 // import logo from './logo.svg'
 import './App.css'
