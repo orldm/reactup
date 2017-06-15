@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const NavigationMenu = () => (
   <div className="left-container">
       <div className="left-menu">
-          <div className="left-menu-header"><img src={require('../images/shape.svg')} alt='logo'/>In-Depth
+          <div className="left-menu-header"><img src={process.env.PUBLIC_URL + '/images/shape.svg'} alt='logo'/>In-Depth
           </div>
           <div className="left-menu-list">
               <div className="left-menu-list-title">DASHBOARDS</div>
